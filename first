@@ -1,0 +1,45 @@
+HTTP : client sends something which formated into envolope, then pass to server. Document-based protocol.
+HTTP has strict standard for what the envolope should look like.
+
+GET
+Host:
+User-Agent
+Accept
+Accept-Language
+Accept-Encoding
+Accept-Charset
+Keep-Alive
+Connection
+
+All the above are most reqeust headers (metadata)
+for get method, entity-body is empty. All information in the path and headers.
+
+Server response:
+
+HTTP: code
+Server:Apache
+Last-modifiedL 
+Etag
+Accept-Range
+Content-length
+Content-type
+X-Cache
+Keep-Alive
+Connection
+
+So response contains: Response code, response header, entity-body
+FIVE common HTTP methods: GET, HEAD, PUT, DELETE, POST
+
+How and which range
+the range is decided in the uri. 
+Another alternative is putting it into entity body (SOAP)
+
+Technology on web:
+HTTP---> all webserive use HTTP, but in different way. request in restful web service puts the method
+infomation in the HTTP method and the scoping info in the URI.
+RPC-style tends to ignore HTTP method, looking for method and scoping info in the URI HTTP headers.
+
+URI --> service endpoint
+
+XML-RPC --> 
+
